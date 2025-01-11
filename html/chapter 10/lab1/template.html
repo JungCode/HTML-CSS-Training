@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Template</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +19,9 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/
-favicon-32.png">
+        favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-
-touch-icon.png">
+        touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 </head>
 
@@ -35,37 +35,26 @@ touch-icon.png">
     </header>
     <hr>
     <!-- Use the main area to add the main content to the webpage -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home &nbsp; &#9838; &nbsp;</a></li>
-            <li><a href="lessons.html">Lessons &nbsp; &#9838; &nbsp;</a></li>
-            <li><a href="instructors.html">Instructors &nbsp; &#9838; &nbsp;</a></li>
-            <li><a href="rentals.html">Rentals &nbsp; &#9838; &nbsp;</a></li>
-            <li><a href="contact.html">Contact &nbsp; &#9838; &nbsp;</a></li>
-        </ul>
-    </nav>
-    <hr>
-
-    <!-- Hero Image -->
-    <div id="hero" class="tab-desk">
-        <img src="images/music-notes.png" alt="colorful music notes">
-    </div>
-    <hr>
-    <main>
-        <div id="intro">
-            <p>Welcome to Strike a Chord. We are a local music store, specializing
-                in lessons and rental equipment. Our mission is to provide world-class
-                instruction with each music lesson.</p>
-            <p>We provide lessons for several musical instruments, including
-                piano, guitar, bass, and violin. Your first two lessons are <span class="action">FREE</span>.
-                Contact us today to get started!</p>
+    <nav class="mobile-nav tab-desk">
+        <div id="menu-links">
+            <a href="index.html">Home &nbsp; &#9838; &nbsp;</a>
+            <a href="lessons.html">Lessons &nbsp; &#9838; &nbsp;</a>
+            <a href="instructors.html">Instructors &nbsp; &#9838; &nbsp;</a>
+            <a href="rentals.html">Rentals &nbsp; &#9838; &nbsp;</a>
+            <a href="contact.html">Contact &nbsp; &#9838; &nbsp;</a>
         </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+    <main>
+        <div></div>
     </main>
-    <hr>
     <footer>
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
         <a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a>
-        <p>lessons@strikeachord.net</p>
     </footer>
 </body>
+<script src="script.js"></script>
 
 </html>

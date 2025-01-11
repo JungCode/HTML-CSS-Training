@@ -32,7 +32,33 @@ ul {
 /* Style rule for images */
 /* Style rules for mobile viewport */
 /* Hide tab-desk class */
-.tab-desk {
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #373684;
+}
+
+nav ul {
+    display: none;
+}
+
+#menu-links {
     display: none;
 }
 
@@ -78,6 +104,9 @@ header {
 }
 
 header h1 {
+    font-size: 1.5em;
+    padding: 4%;
+    margin-right: 15%;
     font-family: "DM Serif Display", serif;
 }
 
@@ -86,23 +115,10 @@ nav {
     background-color: #373684;
 }
 
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
 nav li {
     display: block;
     border-top: 1px solid #e5e9fc;
     font-size: 2em;
-}
-
-nav li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
 }
 
 /* Style rules for main content */
@@ -245,6 +261,24 @@ tr:nth-child(odd) {
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 811px),
 print {
+    header h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+    }
+    nav ul {
+        display:block;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -260,7 +294,7 @@ print {
         display: block;
     }
 
-    .mobile {
+    .mobile-nav {
         display: none;
     }
 
@@ -290,8 +324,9 @@ print {
         width: 500px;
         height: 450px;
     }
+
     /* Viewport: Style rules for form elements */
-    form{
+    form {
         width: 70%;
         margin: 0 auto;
     }
@@ -323,6 +358,7 @@ print {
     }
 
     nav li a:hover {
+        transform: scale(1.2);
         color: #373684;
         background-color: #e5e9fc;
     }
@@ -347,13 +383,15 @@ print {
     table {
         width: 70%;
     }
+
     /* Desktop Viewport: Style rules for form elements */
-    .form-grid{
+    .form-grid {
         display: grid;
         grid-template-columns: auto auto;
         gap: 20px;
     }
-    .btn{
+
+    .btn {
         grid-column: 1 / span 2;
     }
 }
